@@ -8,7 +8,13 @@
 <h2>{{ year }}</h2>
 <ul class="listing">
     {% for article in year_articles %}
-    <li><span class="date">{{ article.date|strftime('%Y/%m/%d') }}</span><a href="/{{ article.url }}">{{ article.title }}</a></li>
+    <li><span class="date">{{ article.date|strftime('%Y/%m/%d') }}</span><a href="/{{ article.url }}">
+    {% if article.metadata.get('is_slide', False) %}
+            {% include "partials/fa-slide.html" %}
+        {% elif article.metadata.get('is_confidential', False) %}
+            {% include "partials/fa-lock.html" %}
+        {% endif %}
+    {{ article.title }}</a></li>
     {% endfor %}
 </ul>
 {% endfor %}

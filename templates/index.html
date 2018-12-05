@@ -3,7 +3,13 @@
 {% block content %}
 {% for article in articles_page.object_list %}
 <div class="post">
-    <h1 class="post-title"><a href="/{{ article.url }}">{{ article.title }}</a></h1>
+    <h1 class="post-title"><a href="/{{ article.url }}">
+        {% if article.metadata.get('is_slide', False) %}
+            {% include "partials/fa-slide.html" %}
+        {% elif article.metadata.get('is_confidential', False) %}
+            {% include "partials/fa-lock.html" %}
+        {% endif %}
+    {{ article.title }}</a></h1>
     <div class="post-meta">{{ article.date|strftime('%Y-%m-%d') }}</div>
     {% if DISQUS_SHORTNAME and article.comments|lower != 'false' %}
     <a data-disqus-identifier="{{ article.url }}" href="/{{ article.url }}#disqus_thread" class="disqus-comment-count"></a>
