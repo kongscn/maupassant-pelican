@@ -1,0 +1,13 @@
+{% extends "slide.html" %}
+
+{% block content %}
+	<section data-markdown
+			 data-separator="^\r?\n---\r?\n$"
+			 data-separator-vertical="^\r?\n--\r?\n$"
+			 data-separator-notes="^Notes?:"
+			 data-charset="utf-8">
+		<script type="text/template">
+			{{ article.content }}
+		</script>
+	</section>
+{% endblock content %}
