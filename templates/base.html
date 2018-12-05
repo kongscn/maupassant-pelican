@@ -38,8 +38,9 @@
         </div>
         <div id="nav-menu">
             {% set MENUS_TMP = MENUITEMS or (('Home', '/.', 'fa-home'), ('Archive', '/archives.html', 'fa-archive')) %}
-            {% for title, link, fa in MENUS_TMP %}
-            <a href="{{ link }}"><i class="fa {{ fa }}"> {{ title }}</i></a>
+            {% for title, link, fa, current_name in MENUS_TMP %}
+            <a href="{{ link }}" {% if current_name == page_name %}class="current"{% endif %}>
+                <i class="fa {{ fa }}"> {{ title }}</i></a>
             {% endfor %}
         </div>
     </div>
