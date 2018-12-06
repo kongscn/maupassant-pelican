@@ -14,6 +14,17 @@
     <a data-disqus-identifier="{{ article.url }}" href="/{{ article.url }}#disqus_thread" class="disqus-comment-count"></a>
     {% endif %}
     <div class="post-content">
+        {% if article.series %}
+            <p>This post is part {{ article.series.index }} of the "{{ article.series.name }}" series:</p>
+            <ol class="parts">
+                {% for part_article in article.series.all %}
+                    <li {% if part_article == article %}class="active"{% endif %}>
+                        <a href='{{ SITEURL }}/{{ part_article.url }}'>{{ part_article.title }}</a>
+                    </li>
+                {% endfor %}
+            </ol>
+        {% endif %}
+
         {{ article.content }}
 
         {% if article.tags %}
