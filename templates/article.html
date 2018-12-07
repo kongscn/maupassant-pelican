@@ -13,6 +13,13 @@
     {% if DISQUS_SHORTNAME and article.comments|lower != 'false' %}
     <a data-disqus-identifier="{{ article.url }}" href="/{{ article.url }}#disqus_thread" class="disqus-comment-count"></a>
     {% endif %}
+
+    {% if article.toc %}
+        <div class="clear">
+            {{article.toc}}
+        </div>
+    {% endif %}
+
     <div class="post-content">
         {% if article.series %}
             <p>This post is part {{ article.series.index }} of the "{{ article.series.name }}" series:</p>
