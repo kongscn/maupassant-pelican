@@ -490,7 +490,7 @@ div {
 
 /* for archive page ends*/
 /* middle*/
-@media print, screen and (max-width: 48em) {
+@media print, screen and (max-width: 64em) {
     .body_container {
         padding: 0 30px;
     }
