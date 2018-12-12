@@ -238,19 +238,22 @@ div {
 }
 
 .post .post-meta:before {
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
     content: "\f073";
     padding-right: 0.3em;
 }
 
 .post .post-meta .category:before {
-    font-family: "FontAwesome";
-    content: "\f07c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f07b";
     padding-right: 0.3em;
 }
 
 .post .post-meta #busuanzi_value_page_pv:before {
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f024";
     padding-right: 0.3em;
 }
@@ -265,8 +268,9 @@ div {
 }
 
 .post .ds-thread-count:before {
-    font-family: "FontAwesome";
-    content: "\f0e5";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f075";
     padding-right: 0.3em;
 }
 
@@ -284,8 +288,9 @@ div {
 }
 
 .post .disqus-comment-count:before {
-    font-family: "FontAwesome";
-    content: "\f0e5";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f075";
     padding-right: 0.3em;
 }
 
@@ -397,7 +402,8 @@ div {
 }
 
 .post .tags a:before {
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f0c6";
     padding-right: 0.3em;
 }
@@ -435,8 +441,9 @@ div {
 }
 
 .page-navigator a.prev:before, .page-navigator span.prev:before {
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
     content: "\f100";
+    font-weight: 900;
     padding-right: 0.3em;
 }
 
@@ -445,7 +452,8 @@ div {
 }
 
 .page-navigator a.next:after, .page-navigator span.next:after {
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f101";
     padding-left: 0.3em;
 }
@@ -646,7 +654,8 @@ p.readmore a {
 }
 
 p.readmore a:after {
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f101";
     padding-left: 0.3em;
 }
@@ -680,7 +689,8 @@ p.readmore a:hover {
 }
 
 .post-nav a.pre:before {
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f0d9";
     padding-right: 0.3em;
 }
@@ -690,7 +700,8 @@ p.readmore a:hover {
 }
 
 .post-nav a.next:after {
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f0da";
     padding-left: 0.3em;
 }
