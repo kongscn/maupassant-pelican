@@ -58,7 +58,7 @@
             {% endif %}
         </div>
         <div id="nav-menu">
-            {% set MENUS_TMP = MENUITEMS or (('Home', '/.', 'fa-home'), ('Archive', '/archives.html', 'fa-archive')) %}
+            {% set MENUS_TMP = MENUITEMS or (('Home', '/.', 'fa-home', 'index'), ('Archive', '/archives.html', 'fa-archive', 'archive')) %}
             {% for title, link, fa, current_name in MENUS_TMP %}
             <a href="{{ link }}" {% if current_name == page_name %}class="current"{% endif %}>
                 <i class="fa {{ fa }}"> {{ title }}</i></a>
